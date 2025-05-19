@@ -1,0 +1,46 @@
+name: hooshino_flutter
+description: "یک برنامه فلاتر WebView برای Hooshino."
+publish_to: 'none' # اگر قصد انتشار در pub.dev را دارید این خط را حذف کنید
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0' # با توجه به نسخه پایدار فعلی فلاتر تنظیم شده است
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI و آیکون‌ها
+  cupertino_icons: ^1.0.6 # یا جدیدترین نسخه
+
+  # مدیریت وضعیت
+  flutter_bloc: ^8.1.3 # یا جدیدترین نسخه
+  equatable: ^2.0.5 # برای بررسی برابری مقادیر در وضعیت‌ها و رویدادهای Bloc
+
+  # مسیریابی
+  go_router: ^13.2.0 # یا جدیدترین نسخه
+
+  # WebView
+  # ما از flutter_inappwebview استفاده می‌کنیم چون امکانات بیشتری نسبت به webview_flutter دارد
+  flutter_inappwebview: ^6.0.0 # یا جدیدترین نسخه سازگار با Flutter 3.19+
+
+  # برای کنترل UI سیستم (مانند نوار وضعیت و نوار ناوبری)
+  flutter_native_splash: ^2.3.10 # برای صفحه اسپلش (اختیاری اما توصیه شده)
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.1 # برای بررسی کیفیت کد
+
+flutter:
+  uses-material-design: true
+
+  # برای افزودن فونت‌های سفارشی (اگر نیاز دارید)
+  # fonts:
+  #   - family: MyCustomFont
+  #     fonts:
+  #       - asset: fonts/MyCustomFont-Regular.ttf
+  #       - asset: fonts/MyCustomFont-Bold.ttf
+  #         weight: 700
